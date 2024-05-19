@@ -36,6 +36,109 @@ li{
   list-style: none;
 }
 
+/* HEADER */
+
+.site-title{
+  width: 80px;
+  height: 93px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.btn-menu {
+  position: fixed;
+  right: 60px;
+  top: 60px;
+  z-index: 4;
+  height: 53px;
+  width: 80px;
+}
+
+.menu-text{
+  font-size: 0.6875rem;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.menu-text-open{
+  bottom: 0;
+  left: 35px;
+}
+
+.menu-text-close{
+  bottom: -5px;
+  left: 42px;
+}
+
+#menu-open span {
+  height: 1px ;
+  background: #fff;
+  position: absolute;
+}
+
+#menu-open span:nth-child(1) {
+  width: 80px;
+  top: 0;
+  left: 0;
+}
+
+#menu-open span:nth-child(2) {
+  width: 56px;
+  top: 12px;
+  right: 0;
+}
+
+#menu-open span:nth-child(3) {
+  width: 28px;
+  top: 24px;
+  right: 0;
+}
+
+#menu-close span {
+  width: 40px;
+  height: 1px ;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+#menu-close span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+#menu-close span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  padding: 8rem 2rem 2rem;
+  width: 50%;
+  height: 100vh;
+  background-color: #000;
+  translate: 100vw;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-list li {
+  margin: 1.5rem 0;
+  opacity: 0;
+}
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+
 
 
 
