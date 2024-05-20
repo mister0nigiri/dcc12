@@ -6,10 +6,8 @@ html{
 }
 
 body{
+  background-color: #707070;
   color: #333;
-  /* font-family: "Lusitana", serif;
-  font-weight: 700;
-  font-style: normal; こいつらはセクションタイトル用*/
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -34,6 +32,17 @@ img{
 
 li{
   list-style: none;
+}
+
+.section-title{
+  color: #fff;
+  font-size: 2.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
+  font-family: "Lusitana", serif;
+  font-weight: normal;
+  line-height: 1;
 }
 
 /* HEADER */
@@ -119,24 +128,265 @@ li{
   top: 0;
   right: 0;
   z-index: 4;
-  padding: 8rem 2rem 2rem;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   background-color: #000;
   translate: 100vw;
+  display: flex;
 }
-.menu-list {
-  list-style: none;
+
+.menu-panel__inner{
+  width: 50%;
+  order: 2;
+  padding-top: 50px;
+  padding-left: 13%;
 }
+
+.menu-panel__img{
+  width: 50%;
+  order: 1;
+}
+
+.menu-panel__img img{
+  height: 100vh;
+}
+
+.site-title2{
+  width: 100px;
+  height: 116px;
+  margin-left: 115px;
+}
+
+.menu-list-box{
+  margin-top: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  gap: 80px;
+}
+
 .menu-list li {
-  margin: 1.5rem 0;
   opacity: 0;
+  color: #fff;
+  font-size: 0.875rem;
 }
+
 .menu-list a {
   color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
+  font-size: 0.875rem;
 }
+
+.menu-list1 li{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.menu-list1 li:last-of-type{
+  margin-bottom: 0;
+}
+
+.menu-list2 li{
+  margin-bottom: 30px;
+}
+
+.menu-list2 li:first-of-type{
+  margin-bottom: 50px;
+}
+
+.menu-list2 li:last-of-type{
+  margin-bottom: 0;
+}
+
+.reserve-btn{
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 21px;
+  border: 1px solid #fff;
+  text-align: center;
+  width: 350px;
+  transition: .3s;
+}
+
+.reserve-btn:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+
+/* MV */
+
+.background-video video{
+  height: 100vh;
+}
+
+
+
+/* CONCEPT */
+
+.concept{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.concept__img{
+  order: 1;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 55px;
+}
+
+.concept__text{
+  order: 2;
+  padding-top: 220px;
+  padding-right: 50px;
+  padding-left: 55px;
+  width: 50%;
+}
+
+.concept__description{
+  margin-top: 40px;
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 2;
+}
+
+/* STAY */
+
+.stay{
+  margin-top: 240px;
+  position: relative;
+}
+
+.stay__board{
+  max-width: 900px;
+  width: 100%;
+  background-color: #000;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 20%;
+  padding-right: 20%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+}
+
+.stay__board__list__item{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px dotted #fff;
+}
+
+.stay__board__list__item:last-of-type{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.stay__board__title{
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: "Lusitana", serif;
+  line-height: 1;
+}
+
+.stay__board__description{
+  margin-top: 15px;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.stay__board__right li{
+  font-size: 0.875rem;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.stay__room{
+  margin: 0 0 0 auto;
+  max-width: 500px;
+  padding-top: 60px;
+  transform: translateX(100px);
+}
+
+.stay__room2{
+  margin-top: 30px;
+}
+
+.stay__room3{
+  margin-top: 30px;
+}
+
+.stay__room__title{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-family: "Lusitana", serif;
+  line-height: 1;
+}
+
+.stay__room__img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.stay__room__img:last-of-type{
+  margin-bottom: 0px;
+}
+
+
+.stay__room__img li{
+  margin-top: 30px;
+}
+
+.stay__room__img li:first-of-type{
+  margin-top: 0px;
+}
+
+
+
+/* RESTAURANT */
+
+.restaurant{
+  margin-top: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

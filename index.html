@@ -22,7 +22,6 @@
 <body>
   <header class="header">
     <h1 class="site-title"><a href="index.html"><img src="img/logo@2x.png" alt="The Beach Walk"></a></h1>
-    <!-- ナビゲーションメニュー ↓↓ 追加 ↓↓ -->
     <nav>
       <button id="menu-open" class="btn-menu">
         <span></span>
@@ -31,91 +30,90 @@
         <p class="menu-text menu-text-open">menu</p>
       </button>
       <div id="menu-panel">
-        <button id="menu-close" class="btn-menu">
-          <span></span>
-          <span></span>
-          <p class="menu-text menu-text-close">close</p>
-        </button>
-        <ul class="menu-list">
-          <li><a href="#">Online Shop</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="mailto:hello@example.com">Contact</a></li>
-        </ul>
-        <!-- <h1 class="site-title2"><a href="index.html"><img src="img/logo@2x.png" alt="The Beach Walk"></a></h1>
-        <div class="menu-list-box">
-          <ul class="menu-list1">
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="#concept">concept</a></li>
-            <li><a href="#stay">stay</a></li>
-            <li><a href="#restaurant">restaurant</a></li>
-            <li><a href="#access">access</a></li>
-          </ul>
-          <ul class="menu-list2">
-            <li>
-              [お問い合わせ先]<br>
-              〒907-9999<br>
-              沖縄県石垣市ＸＸＸＸＸ<br>
-              Tel: 9999-99-9999<br>
-              E-mail: xxx@xxx.com
-            </li>
-            <li><a href="#">宿泊約款</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
-          </ul>
+        <div class="menu-panel__inner">
+          <button id="menu-close" class="btn-menu">
+            <span></span>
+            <span></span>
+            <p class="menu-text menu-text-close">close</p>
+          </button>
+          <h1 class="site-title2">
+            <a href="index.html"><img src="img/logo@2x.png" alt="The Beach Walk"></a>
+          </h1>
+          <div class="menu-list-box">
+            <ul class="menu-list menu-list1">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="#concept">concept</a></li>
+              <li><a href="#stay">stay</a></li>
+              <li><a href="#restaurant">restaurant</a></li>
+              <li><a href="#access">access</a></li>
+            </ul>
+            <ul class="menu-list menu-list2">
+              <li>
+                [お問い合わせ先]<br>
+                〒907-9999<br>
+                沖縄県石垣市ＸＸＸＸＸ<br>
+                Tel: 9999-99-9999<br>
+                E-mail: xxx@xxx.com
+              </li>
+              <li><a href="#">宿泊約款</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </div>
+          <a class="reserve-btn" href="#">ご宿泊予約はこちら</a>
         </div>
-        <a class="reserve-btn" href="#">ご宿泊予約はこちら</a> -->
+        <div class="menu-panel__img">
+          <img src="img/menu-img-1@2x.png" id="random-image" alt="ランダムな画像">
+        </div>
       </div>
     </nav>
-  <!-- ↑↑ 追加 ↑↑ -->
   </header>
   <main>
-    <div class="background-video">
+    <div class="background-video mv">
       <video src="img/video.mp4" poster="img/mv@2x.png" playsinline loop muted autoplay ></video>
     </div>
-    <section class="concept" id="concept">
-      <div class="concept__img">
-        <img src="img/concept@2x.png" alt="">
-      </div>
+    <section class="concept wrapper" id="concept">
       <div class="concept__text">
         <h2 class="concept__title section-title">concept</h2>
         <p class="concept__description">コンセプトについての説明テキストが入りますコンセプトについての説明テキストが入りますコンセプトについての説明テキストが入りますコンセプトについての説明テキストが入ります。</p>
       </div>
+      <div class="concept__img">
+        <img src="img/concept@2x.png" alt="">
+      </div>
     </section>
-    <section class="stay" class="stay">
-      <div class="stay__board">
+    <section class="stay wrapper" id="stay">
+      <div class="stay__board fixed-element">
         <h2 class="stay__title section-title">stay</h2>
         <ul class="stay__board__list">
-          <li>
-            <div>
-              <h3>ocean view room 01</h3>
-              <p>ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
+          <li class="stay__board__list__item">
+            <div class="stay__board__left">
+              <h3 class="stay__board__title">ocean view room 01</h3>
+              <p class="stay__board__description">ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
             </div>
-            <ul>
+            <ul class="stay__board__right">
               <li>定員&nbsp;/&nbsp;&nbsp;2～4名</li>
               <li>ベッド&nbsp;/&nbsp;&nbsp;セミダブル</li>
               <li>面積&nbsp;/&nbsp;&nbsp;99㎡</li>
               <li>料金&nbsp;/&nbsp;&nbsp;99,999円</li>
             </ul>
           </li>
-          <li>
-            <div>
-              <h3>ocean view room 02</h3>
-              <p>ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
+          <li class="stay__board__list__item">
+            <div class="stay__board__left">
+              <h3 class="stay__board__title">ocean view room 02</h3>
+              <p class="stay__board__description">ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
             </div>
-            <ul>
+            <ul class="stay__board__right">
               <li>定員&nbsp;/&nbsp;&nbsp;2～4名</li>
               <li>ベッド&nbsp;/&nbsp;&nbsp;セミダブル</li>
               <li>面積&nbsp;/&nbsp;&nbsp;99㎡</li>
               <li>料金&nbsp;/&nbsp;&nbsp;99,999円</li>
             </ul>
           </li>
-          <li>
-            <div>
-              <h3>ocean view room 03</h3>
-              <p>ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
+          <li class="stay__board__list__item">
+            <div class="stay__board__left">
+              <h3 class="stay__board__title">ocean view room 03</h3>
+              <p class="stay__board__description">ルームについての説明テキストが入りますルームについての説明テキストが入ります。</p>
             </div>
-            <ul>
+            <ul class="stay__board__right">
               <li>定員&nbsp;/&nbsp;&nbsp;2～4名</li>
               <li>ベッド&nbsp;/&nbsp;&nbsp;セミダブル</li>
               <li>面積&nbsp;/&nbsp;&nbsp;99㎡</li>
@@ -126,22 +124,22 @@
       </div>
       <div class="stay__room">
         <div class="stay__room1">
-          <h3>ocean view room 01</h3>
-          <ul>
+          <h3 class="stay__room__title">ocean view room 01</h3>
+          <ul class="stay__room__img">
             <li><img src="img/stay-room01-1@2x.png" alt=""></li>
             <li><img src="img/stay-room01-2@2x.png" alt=""></li>
           </ul>
         </div>
         <div class="stay__room2">
-          <h3>ocean view room 02</h3>
-          <ul>
+          <h3 class="stay__room__title">ocean view room 02</h3>
+          <ul class="stay__room__img">
             <li><img src="img/stay-room02-1@2x.png" alt=""></li>
             <li><img src="img/stay-room02-2@2x.png" alt=""></li>
           </ul>
         </div>
         <div class="stay__room3">
-          <h3>ocean view room 03</h3>
-          <ul>
+          <h3 class="stay__room__title">ocean view room 03</h3>
+          <ul class="stay__room__img">
             <li><img src="img/stay-room03-1@2x.png" alt=""></li>
             <li><img src="img/stay-room03-2@2x.png" alt=""></li>
           </ul>
