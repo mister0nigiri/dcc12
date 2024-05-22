@@ -53,39 +53,3 @@ menuClose.addEventListener('click', () => {
     menuItem.animate({opacity: [1, 0]}, menuOptions);
   });
 });
-
-
-
-
-
-
-window.addEventListener('scroll', function() {
-  const stay = document.getElementById('stay');
-  const fixedElement = document.querySelector('.fixed-element');
-
-  // コンテナの位置を取得
-  const stayRect = stay.getBoundingClientRect();
-  const stayTop = stayRect.top + window.pageYOffset;
-  const stayBottom = stayTop + stay.offsetHeight;
-
-  // 固定表示する要素の高さを取得
-  const fixedElementHeight = fixedElement.offsetHeight;
-
-  // スクロール位置を取得
-  const scrollY = window.pageYOffset;
-
-  // 固定表示する要素のトップ位置を調整
-  if (scrollY > stayTop && scrollY < (stayBottom - fixedElementHeight)) {
-      fixedElement.style.position = 'fixed';
-      fixedElement.style.top = '0px'; // 固定位置を指定
-      fixedElement.style.width = '100%'; // 幅を固定
-  } else if (scrollY >= (stayBottom - fixedElementHeight)) {
-      fixedElement.style.position = 'absolute';
-      fixedElement.style.top = (stayBottom - stayTop - fixedElementHeight) + 'px'; // stay内の位置
-      fixedElement.style.width = '100%'; // 幅を固定
-  } else {
-      fixedElement.style.position = 'absolute';
-      fixedElement.style.top = '0px'; // 初期位置に戻す
-      fixedElement.style.width = '100%'; // 幅を固定
-  }
-});
