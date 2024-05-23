@@ -440,6 +440,10 @@ li{
   transform: translateX(106px);
 }
 
+.grid-text-sp-only{
+  display: none;
+}
+
 .grid{
   margin-top: 120px;
   display: grid;
@@ -804,6 +808,309 @@ li{
 /*-------------------------------------------
 スマートフォン SP
 -------------------------------------------*/
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
 
+  .section-title{
+    font-size: 2rem;
+    padding-left: 57px;
+    padding-right: 57px;
+    line-height: 1.4;
+  }
+  
+  /* HEADER */
+  
+  .site-title{
+    width: 60px;
+    height: 70px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .btn-menu {
+    right: 20px;
+    top: 20px;
+    width: 56px;
+  }
+  
+  .menu-text-open{
+    bottom: 3px;
+    left: 11px;
+  }
+  
+  .menu-text-close{
+    left: 18px;
+  }
+
+  #menu-open span:nth-child(1) {
+    width: 56px;
+  }
+  
+  #menu-open span:nth-child(2) {
+    width: 40px;
+  }
+  
+  #menu-open span:nth-child(3) {
+    width: 20px;
+  }
+  
+  .menu-panel__inner{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .menu-panel__img{
+    display: none;
+  }
+  
+  .menu-panel__img img{
+    display: none;
+  }
+  
+  .site-title2{
+    width: 60px;
+    height: 70px;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  
+  .menu-list-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .reserver__btn-box{
+    text-align: center;
+  }
+  
+  .reserve-btn{
+    padding: 20px;
+    width: 280px;
+  }
+  
+  /* CONCEPT */
+  
+  .concept{
+    padding-top: 80px;
+    flex-direction: column-reverse;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  
+  .concept__img{
+    width: 100%;
+    height: 321px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .concept__text{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  
+  /* STAY */
+  
+  .stay{
+    margin-top: 80px;
+  }
+  
+  .stay__board{
+    width: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: static;
+    transform: translateX(0px);
+  }
+  
+  .stay__board__list__item{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stay__board__right li{
+    margin-bottom: 3px;
+  }
+  
+  .stay__room{
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateX(0px);
+    width: 100%;
+  }
+  
+  .stay__room2{
+    margin-top: 80px;
+  }
+  
+  .stay__room3{
+    margin-top: 80px;
+  }
+  
+  .stay__room__img{
+    margin-bottom: 20px;
+  }
+  
+  /* RESTAURANT */
+  
+  .restaurant{
+    margin-top: 100px;
+  }
+  
+  .restaurant__rest{
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .rest__text{
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .rest__title{
+    font-size: 1.25rem;
+  }
+  
+  .rest__description{
+    margin-top: 20px;
+  }
+  
+  .rest__img{
+    margin-top: 20px;
+    width: 100%;
+    transform: translateX(0px);
+  }
+  
+  .restaurant__bar{
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .bar__text{
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .bar__title{
+    font-size: 1.25rem;
+  }
+  
+  .bar__description{
+    margin-top: 20px;
+  }
+  
+  .bar__img{
+    margin-top: 20px;
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  .grid-text-sp-only{
+    display: block;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.625;
+    margin-top: 80px;
+  }
+  
+  .grid{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ACCESS */
+  
+  .access{
+    margin-top: 80px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  
+  .access__text{
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .access__map{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .access__map iframe{
+    height: 100%;
+  }
+  
+  /* NEWS */
+  
+  .news{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-right: 50px;
+    width: 100%;
+    height: 58px;
+  }
+  
+  .news__list::before { 
+    right: -30px;
+  }
+  
+  .news__list li{
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .news__list li time{
+    margin-right: 0px;
+  }
+  
+  .news__list li a{
+    margin-top: 5px;
+  }
+  
+  
+  /* FOOTER */
+  
+  .footer{
+    margin-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .footer__logo{
+    width: 100px;
+    height: 116px;
+  }
+  
+  .footer__reserve{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .copyright{
+    margin-top: 100px;
+  }
+  
 }
