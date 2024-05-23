@@ -327,11 +327,11 @@ li{
 }
 
 .stay__room2{
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .stay__room3{
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .stay__room__title{
@@ -542,11 +542,11 @@ li{
 .news{
   background-color: #000;
   color: #fff;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 8px;
-  padding-right: 40px;
-  width: 30%;
+  padding-right: 90px;
+  width: 600px;
   height: 68px;
   position: fixed;
   right: 0;
@@ -561,11 +561,11 @@ li{
   position: relative;
 }
 
-.news__list::before { /* くの字の表示設定 */
+.news__list::before { 
   content: "";
   position: absolute;
   top: 0;
-  right: -15px;
+  right: -36px;
   width: 10px;  
   height: 10px;   
   border-top: 2px solid #fff;    
@@ -630,4 +630,180 @@ li{
   margin-top: 240px;
   color: #fff;
   font-size: 0.75rem;
+}
+
+/*-------------------------------------------
+大画面 BD
+-------------------------------------------*/
+@media screen and (max-width: 1800px) {
+
+}
+
+
+/*-------------------------------------------
+タブレット TB
+-------------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+  /* HEADER */
+
+  .menu-panel__inner{
+    width: 60%;
+    padding-left: 10%;
+  }
+
+  .menu-panel__img{
+    width: 40%;
+  }
+
+  .site-title2{
+    margin-left: 0;
+  }
+
+  .menu-list-box{
+    gap: 50px;
+  }
+
+  .reserve-btn{
+    width: 300px;
+  }
+
+  /* CONCEPT */
+
+  .concept{
+    justify-content: flex-start;
+  }
+
+  .concept__img{
+    width: 49%;
+    height: 580px;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
+  .concept__img img{
+    height: 100%;
+  }
+
+  .concept__text{
+    padding-top: 196px;
+    padding-right: 0px;
+    padding-left: 43px;
+    width: 38.4%;
+  }
+
+  /* STAY */
+
+  .stay{
+    margin-top: 222px;
+  }
+
+  .stay__board{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transform: translateX(0px);
+  }
+
+  .stay__board__right li{
+    margin-bottom: 5px;
+  }
+
+  .stay__room{
+    width: 44%;
+    margin-right: 3%;
+    transform: translateX(0px);
+  }
+
+  /* RESTAURANT */
+
+  .rest__text{
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 40px;
+  }
+
+  .rest__img{
+    width: 50%;
+    height: 400px;
+    transform: translateX(0px);
+  }
+
+  .rest__img img{
+    height: 100%;
+  }
+
+  .bar__text{
+    width: 50%;
+    padding-right: 44px;
+    padding-left: 20px;
+  }
+
+  .bar__img{
+    width: 50%;
+    height: 400px;
+    transform: translateX(0px);
+  }
+
+  .bar__img img{
+    height: 100%;
+  }
+
+  .grid{
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .grid__item3 { 
+    grid-area: 5 / 1 / 6 / 2; 
+  }
+
+  .grid__item4 { 
+    grid-area: 6 / 1 / 9 / 2; 
+  }
+
+  .grid__item5 { 
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .grid__item6 { 
+    grid-area: 3 / 2 / 5 / 3; 
+  }
+
+  .grid__item7 { 
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+  .grid__item8 { 
+    grid-area: 6 / 2 / 9 / 3; 
+  }
+    
+  /* ACCESS */
+
+  .access{
+    padding-left: 20px;
+  }
+
+  .access__text{
+    width: 50%;
+  }
+
+  .access__map{
+    width: 50%;
+    margin-right: 0px;
+  }
+
+  .access__map iframe{
+    width: 100%;
+  }
+
+}
+
+/*-------------------------------------------
+スマートフォン SP
+-------------------------------------------*/
+@media screen and (max-width: 390px) {
+
 }

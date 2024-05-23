@@ -70,10 +70,10 @@ menuLinks.forEach((link) => {
 const box = document.getElementById('news');
 
 box.addEventListener('click', function() {
-    if (this.style.height === '50%') {
+    if (this.style.height === '60%') {
         this.style.height = '68px';
     } else {
-        this.style.height = '50%';
+        this.style.height = '60%';
     }
     this.querySelector('.news__list').classList.toggle('rotate-135');
 });
