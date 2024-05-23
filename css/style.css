@@ -274,15 +274,15 @@ li{
 
 .stay__board{
   max-width: 900px;
-  width: 100%;
+  width: 75%;
   background-color: #000;
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 20%;
   padding-right: 20%;
-  position: absolute;
+  position: sticky;
   top: 0;
-  left: -300px;
+  transform: translateX(-300px);
 }
 
 .stay__board__list__item{
@@ -496,6 +496,7 @@ li{
 
 .access__text{
   padding-top: 90px;
+  width: 50%;
 }
 
 .access__address{
@@ -527,7 +528,12 @@ li{
 }
 
 .access__map{
+  width: 75%;
+  margin-right: calc(50% - 50vw);
+}
 
+.access__map iframe{
+  width: 100%;
 }
 
 
@@ -536,19 +542,45 @@ li{
 .news{
   background-color: #000;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 8px;
-  padding-right: 90px;
+  padding-right: 40px;
   width: 30%;
   height: 68px;
   position: fixed;
   right: 0;
   bottom: 0;
+  transition: height 0.5s ease;
+  cursor: pointer;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.news__list {
+  position: relative;
+}
+
+.news__list::before { /* くの字の表示設定 */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 10px;  
+  height: 10px;   
+  border-top: 2px solid #fff;    
+  border-right: 2px solid #fff;   
+  transform: rotate(-45deg);   
+  transition: transform 0.3s ease;
+}
+
+.rotate-135::before {
+  transform: rotate(135deg);
 }
 
 .news__list li{
   display: flex;
+  margin-top: 10px;
 }
 
 .news__list li time{
