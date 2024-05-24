@@ -639,14 +639,41 @@ li{
 /*-------------------------------------------
 大画面 BD
 -------------------------------------------*/
-@media screen and (max-width: 1800px) {
 
+@media screen and (min-width: 1800px) {
+  .access__map{
+    margin-right: 0;
+  }
 }
-
 
 /*-------------------------------------------
 タブレット TB
 -------------------------------------------*/
+
+@media screen and (max-width: 1800px) {
+  /* STAY */
+  .stay{
+    margin-top: 222px;
+  }
+
+  .stay__board{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transform: translateX(0px);
+  }
+
+  .stay__board__right li{
+    margin-bottom: 5px;
+  }
+
+  .stay__room{
+    width: 44%;
+    margin-right: 3%;
+    transform: translateX(0px);
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   /* HEADER */
@@ -694,29 +721,6 @@ li{
     padding-right: 0px;
     padding-left: 43px;
     width: 38.4%;
-  }
-
-  /* STAY */
-
-  .stay{
-    margin-top: 222px;
-  }
-
-  .stay__board{
-    width: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
-    transform: translateX(0px);
-  }
-
-  .stay__board__right li{
-    margin-bottom: 5px;
-  }
-
-  .stay__room{
-    width: 44%;
-    margin-right: 3%;
-    transform: translateX(0px);
   }
 
   /* RESTAURANT */
