@@ -592,9 +592,10 @@ li{
   font-size: 0.875rem;
 }
 
-.news__list li a{
+.news__list li h3{
   color: #fff;
   font-size: 0.875rem;
+  font-weight: normal;
   line-height: 1.6;
 }
 
@@ -897,7 +898,7 @@ li{
   /* CONCEPT */
   
   .concept{
-    padding-top: 80px;
+    padding-top: 0px;
     flex-direction: column-reverse;
     padding-left: 22px;
     padding-right: 22px;
@@ -1088,7 +1089,7 @@ li{
     margin-right: 0px;
   }
   
-  .news__list li a{
+  .news__list li h3{
     margin-top: 5px;
   }
   
